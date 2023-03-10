@@ -8,8 +8,11 @@ void main() {
   runApp(
     GetMaterialApp(
       title: "Application",
+      debugShowCheckedModeBanner: false,
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
+      theme:
+          ThemeData(scaffoldBackgroundColor: Color.fromARGB(255, 29, 28, 28)),
     ),
   );
 }
